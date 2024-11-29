@@ -6,9 +6,14 @@ function getComputerChoice(){
     return result;
 }
 
-function getUserChoice(){
+function getUserChoice(str){
 
-    
+    userChoice = prompt("Please enter a choice between: Rock, Paper, or Scissors: ");
+    while (typeof userChoice !== "str"){
+        choice = prompt("Please enter a choice between: Rock, Paper, or Scissors: ");
+    }
+    userChoice = userChoice.toLowerCase();
+    return userChoice
 
 }
 
